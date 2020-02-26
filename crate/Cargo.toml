@@ -6,7 +6,7 @@ license = "Apache-2.0/MIT"
 name = "yew-parcel"
 readme = "./README.md"
 repository = "https://github.com/spielrs/yew-parcel-template.git"
-version = "0.1.0"
+version = "0.12.0"
 
 [lib]
 crate-type = ["cdylib"]
@@ -20,6 +20,6 @@ serde = "1.0"
 serde_derive = "1.0"
 dotenv = "0.15"
 failure = "0.1"
-yew = { version = "0.11.0", features = ["toml", "yaml", "msgpack", "cbor"]}
-yew-router = "0.8"
+yew = { version = "0.12.0", features = ["toml", "yaml", "msgpack", "cbor"]}
+yew-router = "0.9"
 web-sys = "0.3"
