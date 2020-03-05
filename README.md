@@ -24,3 +24,15 @@ npm init yew-parcel my-app
 ## Rustc Version Required
 
 - 1.40.0
+
+## Attention
+
+- if you are using vscode set this parameter like this `rust.target=wasm32-unknown-unknown`
+  to continue using web_sys
+
+- if you don't want `web_sys`, change the feature of `yew` and `yew_router` to `std_web` in cargo.toml file and remove:
+
+```toml
+[build]
+target="wasm32-unknown-unknown"
+```
