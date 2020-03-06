@@ -9,7 +9,7 @@ pub enum AppRouter {
     RootPath,
     #[to= "/hello!"]
     HelloPath,
-    #[to= "/awasome!"]
+    #[to= "/awesome!"]
     AwasomePath,
     #[to = "/page-not-found"]
     PageNotFound(Permissive<String>),
