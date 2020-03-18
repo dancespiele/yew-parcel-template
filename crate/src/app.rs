@@ -41,15 +41,9 @@ impl Component for App {
                     branch=html!{<img src="/assets/spielrs_logo.png"></img>}
                 >
                     <NavbarContainer>
-                        <div class="navbar-item">
-                            <RouterAnchor<AppRouter> route=AppRouter::RootPath>{"Home"}</RouterAnchor<AppRouter>>
-                        </div>
-                        <div class="navbar-item">
-                            <RouterAnchor<AppRouter> route=AppRouter::HelloPath>{"Hello"}</RouterAnchor<AppRouter>>
-                        </div>
-                        <div class="navbar-item">
-                            <RouterAnchor<AppRouter> route=AppRouter::AwesomePath>{"Awesome"}</RouterAnchor<AppRouter>>
-                        </div>
+                            <RouterAnchor<AppRouter> classes="navbar-item" route=AppRouter::RootPath>{"Home"}</RouterAnchor<AppRouter>>
+                            <RouterAnchor<AppRouter> classes="navbar-item" route=AppRouter::HelloPath>{"Hello"}</RouterAnchor<AppRouter>>
+                            <RouterAnchor<AppRouter> classes="navbar-item" route=AppRouter::AwesomePath>{"Awesome"}</RouterAnchor<AppRouter>>
                     </NavbarContainer>
                 </Navbar>
                 <Router<AppRouter, ()>

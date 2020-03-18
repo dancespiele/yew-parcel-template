@@ -865,7 +865,7 @@ dependencies = [
  "wee_alloc 0.4.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "yew 0.14.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "yew-router 0.11.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "yew_styles 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "yew_styles 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -909,7 +909,7 @@ dependencies = [
 
 [[package]]
 name = "yew_styles"
-version = "0.2.0"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "uuid 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -1026,4 +1026,4 @@ dependencies = [
 "checksum yew-router 0.11.0 (registry+https://github.com/rust-lang/crates.io-index)" = "19145953cfaa35cbd26a06ef5f589553d8e16d2a8d889d9c3e74516617ea7db8"
 "checksum yew-router-macro 0.11.0 (registry+https://github.com/rust-lang/crates.io-index)" = "5e2b24468a3ea4ac70f2c46f6ca07a80b2cbb14eb725a16bc74eb5d759fbb3e7"
 "checksum yew-router-route-parser 0.11.0 (registry+https://github.com/rust-lang/crates.io-index)" = "8e6801d6eb8583313fb33f20b141627c51881d24225e8de1660571e971f268d8"
-"checksum yew_styles 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "cbd9e152dd94f725b40630905dc5ca845d77ff4ea60642805ecba9a2b2f3d575"
+"checksum yew_styles 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "78d863ad294f2c5ed6c26b48b6d9c6afe8f62b3e6e9ae71a3145b8e9779337e6"
