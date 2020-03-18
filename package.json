@@ -17,5 +17,8 @@
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-wasm.rs": "^1.2.15",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "yew-styles": "^0.2.0"
   }
 }
