@@ -1,7 +1,7 @@
 use yew::prelude::*;
 use yew_router::{prelude::*, route::Route, switch::Permissive, Switch};
 use yew_styles::{
-    navbar::{Fixed, Navbar, NavbarContainer, NavbarItem},
+    navbar::{Fixed, Navbar, NavbarContainer},
     styles::{Palette, Style},
 };
 
