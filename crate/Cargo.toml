@@ -6,7 +6,7 @@ license = "Apache-2.0/MIT"
 name = "yew-parcel"
 readme = "./README.md"
 repository = "https://github.com/spielrs/yew-parcel-template.git"
-version = "0.13.0"
+version = "0.14.2"
 
 [lib]
 crate-type = ["cdylib"]
@@ -23,6 +23,3 @@ failure = "0.1"
 yew = { version = "0.14", features = ["toml", "yaml", "msgpack", "cbor", "web_sys"]}
 yew-router = { version= "0.11", features = ["web_sys"]}
 web-sys = "0.3"
-
-[build]
-target="wasm32-unknown-unknown"

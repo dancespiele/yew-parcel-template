@@ -723,7 +723,7 @@ dependencies = [
 
 [[package]]
 name = "yew-parcel"
-version = "0.13.0"
+version = "0.14.2"
 dependencies = [
  "cfg-if 0.1.10 (registry+https://github.com/rust-lang/crates.io-index)",
  "console_error_panic_hook 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
