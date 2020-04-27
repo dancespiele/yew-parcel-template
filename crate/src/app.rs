@@ -1,15 +1,15 @@
 use yew::prelude::*;
-use yew_router::{prelude::*, Switch, switch::Permissive , route::Route};
+use yew_router::{prelude::*, route::Route, switch::Permissive, Switch};
 
 pub struct App;
 
 #[derive(Switch, Debug, Clone)]
 pub enum AppRouter {
-    #[to= "/!"]
+    #[to = "/!"]
     RootPath,
-    #[to= "/hello!"]
+    #[to = "/hello!"]
     HelloPath,
-    #[to= "/awesome!"]
+    #[to = "/awesome!"]
     AwasomePath,
     #[to = "/page-not-found"]
     PageNotFound(Permissive<String>),
@@ -24,7 +24,11 @@ impl Component for App {
     }
 
     fn update(&mut self, _: Self::Message) -> ShouldRender {
-        true
+        false
+    }
+
+    fn change(&mut self, _: Self::Properties) -> ShouldRender {
+        false
     }
 
     fn view(&self) -> Html {
@@ -47,4 +51,4 @@ impl Component for App {
             </div>
         }
     }
- }
+}

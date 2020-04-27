@@ -1,4 +1,4 @@
-#![recursion_limit="256"]
+#![recursion_limit = "256"]
 
 #[macro_use]
 extern crate cfg_if;
@@ -43,4 +43,3 @@ pub fn run() {
 
     yew::start_app::<App>();
 }
-
