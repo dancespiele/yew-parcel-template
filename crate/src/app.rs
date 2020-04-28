@@ -28,7 +28,11 @@ impl Component for App {
     }
 
     fn update(&mut self, _: Self::Message) -> ShouldRender {
-        true
+        false
+    }
+
+    fn change(&mut self, _: Self::Properties) -> ShouldRender {
+        false
     }
 
     fn view(&self) -> Html {

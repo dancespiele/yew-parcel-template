@@ -23,16 +23,17 @@ npm init yew-parcel my-app
 
 ## Rustc Version Required
 
-- 1.40.0
+- 1.40.0 or higher
 
 ## Attention
 
-- if you are using vscode set this parameter like this `rust.target=wasm32-unknown-unknown`
-  to continue using web_sys
-
-- if you don't want `web_sys`, change the feature of `yew` and `yew_router` to `std_web` in cargo.toml file and remove:
+- if you don't want `web_sys`, change the feature of `yew` and `yew_router` to `std_web` in cargo.toml file and remove in your cargo config file:
 
 ```toml
 [build]
 target="wasm32-unknown-unknown"
 ```
+
+### License
+
+Yew Parcel Template is MIT licensed. See [license](LICENSE)

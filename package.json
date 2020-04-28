@@ -4,8 +4,8 @@
     "url": "https://github.com/spielrs/yew-parcel-template"
   },
   "name": "create-yew-parcel",
-  "version": "0.14.1",
-  "license": "Apache-2.0/MIT",
+  "version": "0.15.0",
+  "license": "MIT",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
@@ -16,10 +16,8 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-wasm.rs": "^1.2.15",
-    "sass": "^1.26.3",
-    "typescript": "^3.8.3"
-  },
-  "dependencies": {
-    "yew-styles": "^0.2.0"
+    "typescript": "^3.8.3",
+    "minimist": "1.2.5",
+    "kind-of": "6.0.3"
   }
 }

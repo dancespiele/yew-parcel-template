@@ -1,4 +1,4 @@
-#![recursion_limit = "512"]
+#![recursion_limit = "256"]
 
 #[macro_use]
 extern crate cfg_if;
