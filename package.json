@@ -14,10 +14,12 @@
     "create-yew-parcel": ".bin/create-yew-parcel.js"
   },
   "devDependencies": {
+    "kind-of": "6.0.3",
+    "minimist": "1.2.5",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-wasm.rs": "^1.2.15",
+    "sass": "^1.26.5",
     "typescript": "^3.8.3",
-    "minimist": "1.2.5",
-    "kind-of": "6.0.3"
+    "yew-styles": "0.2.0"
   }
 }

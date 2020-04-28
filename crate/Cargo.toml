@@ -23,3 +23,4 @@ failure = "0.1"
 yew = { version="0.15", features = ["toml", "yaml", "msgpack", "cbor", "web_sys"]}
 yew-router = { version = "0.12", features = ["web_sys"]}
 web-sys = "0.3"
+yew_styles = "0.3"
