@@ -1,4 +1,4 @@
-#![recursion_limit = "512"]
+#![recursion_limit = "1024"]
 
 #[macro_use]
 extern crate cfg_if;
@@ -12,6 +12,7 @@ extern crate yew_styles;
 use wasm_bindgen::prelude::*;
 
 mod app;
+mod pages;
 use app::App;
 
 cfg_if! {

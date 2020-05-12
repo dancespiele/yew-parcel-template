@@ -4,6 +4,16 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
     <title>My awesome Yew with Yew-Router and Parcel application</title>
     <script src="app/index.ts"></script>
+    <script type="module">
+      import init, { run } from './yew_parcel.js';
+
+      const start = async() => {
+        await init('./yew_parcel_bg.wasm');
+        run();
+      };
+
+      start();
+    </script>
   </head>
   <body>
   </body>
