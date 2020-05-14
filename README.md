@@ -5,10 +5,10 @@
 This template comes pre-configured with all the boilerplate for compiling Yew framework and Yew Router
 to WebAssembly and hooking into a Parcel build pipeline.
 
-* `npm run start` -- Serve the project locally for
-  development at `http://localhost:1234`.
+* `npm start` -- Serve the project locally for
+  development at `http://localhost:1234` by default.
 
-* `npm run build` -- Bundle the project (in production mode)
+* `npm build` -- Serve the project in production mode
 
 
 ## Using This Template
@@ -20,6 +20,58 @@ cargo install wasm-pack
 ```sh
 npm init yew-parcel my-app
 ```
+
+## Configuration
+
+You will want to change the name of your crate however also you need to change the import js file name that generate the wasm pack in the index.html
+with the new name of your crate
+
+```javascript
+  <script type="module">
+    import init, { run } from './name_of_your_crate.js';
+
+    const start = async() => {
+      await init('./name_of_your_crate_bg.wasm');
+      run();
+    };
+
+    start();
+  </script>
+```
+
+You maybe want that parcel watch more than evething call by `index.html`, and the `src` and `Cargo.toml` of the crate, you need to add the path in the 
+watcher of `wasm-builder`:
+
+```javascript
+    chokidar.watch(['./crate/src', './crate/Cargo.toml', './crate/your_new_path_to_watch']).on('change', async (event, path) => {
+        console.log(`there are new changes in '${path}'. Start to rebuild rustwasm sources`);
+
+        bundler.bundle();
+
+        bundler.hmr.broadcast({
+            type: 'reload'
+        });
+    });
+```
+
+You can also change the address of the parcel server adding a .env file with the next setting:
+
+```sh
+SERVER_ADDRESS=[YOUR_ADDRESS]:[YOUR_PORT]
+```
+
+In case that you want to customize the wasm-pack build you will find it in `wasm_pack_cmd.v`. It is written in [vlang](https://vlang.io/) and
+you will need to install the language in your system to generate the new binary, also you maybe will need to do some changes in `wasm-builder.js`.
+
+
+## Why the template changes?
+The pluging `parcel-pluging-wasm.rs` breaks since the version `0.2.61` of `wasm-bindgen` and it looks that is not maintained anymore.
+Anyway although now small configurations is needed to add as I explained before, the new template build faster than the old one and also
+the new build file `wasm-builder` is a good stuff for customization and extending the implementation.
+
+## Limitations
+If the server is closed while pages are still serving and after it is running again, the browser will not synchronize again with the server until
+you refresh the pages manually.
 
 ## Rustc Version Required
 
