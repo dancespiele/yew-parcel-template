@@ -21,6 +21,10 @@ cargo install wasm-pack
 npm init yew-parcel my-app
 ```
 
+```sh
+npm install
+```
+
 ## Configuration
 
 You will want to change the name of your crate however also you need to change the import js file name that generate the wasm pack in the index.html
@@ -60,8 +64,17 @@ You can also change the address of the parcel server adding a .env file with the
 SERVER_ADDRESS=[YOUR_ADDRESS]:[YOUR_PORT]
 ```
 
-In case that you want to customize the wasm-pack build you will find it in `wasm_pack_cmd.v`. It is written in [vlang](https://vlang.io/) and
-you will need to install the language in your system to generate the new binary, also you maybe will need to do some changes in `wasm-builder.js`.
+In case that you want to customize the wasm-pack build you will find it in `wasm_pack_cmd` sh. For powerShell you will need to write your own script
+and change the name of execution file in `wasm-builder.js`:
+
+```javascript
+    bundler.on('buildStart', () => {
+        const prevtBuildFile = Path.join(__dirname, './your_script.ps1');
+        console.log(`running: ${prevtBuildFile}`);
+        execSync(`${prevtBuildFile} ${buildType === 'production' ? '' : '--dev'}`, {stdio: 'inherit'});
+    });
+
+```
 
 
 ## Why the template changes?
