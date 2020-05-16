@@ -26,7 +26,7 @@ impl Component for About {
         html! {
             <Container direction=Direction::Row wrap=Wrap::Wrap class_name="content">
                 <Item layouts=vec!(ItemLayout::ItXs(12))>
-                    <h2>{"Thanks for your contributions!"}</h2>
+                    <h2>{"Thanks for using or contributing!"}</h2>
                 </Item>
                 <Item layouts=vec!(ItemLayout::ItXs(12))>
                     <p>{"Yew Parcel Template is a "}

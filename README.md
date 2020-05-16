@@ -76,6 +76,17 @@ and change the name of execution file in `wasm-builder.js`:
 
 ```
 
+For static files you need to include in the `package.json`:
+
+```json
+"staticFiles": {
+  "staticPath": ["./crate/pkg", "./crate/your_static_folder"],
+  "watcherGlob": false
+}
+```
+
+The static directory has to be included in some subfolder, not in the root path or it will be ignored. The bundle move the content of the directory
+into the `dist` not the directory itself
 
 ## Why the template changes?
 The pluging `parcel-pluging-wasm.rs` breaks since the version `0.2.61` of `wasm-bindgen` and it looks that is not maintained anymore.
