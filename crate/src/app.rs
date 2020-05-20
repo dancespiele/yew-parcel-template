@@ -1,7 +1,10 @@
-use crate::pages::{About, Home};
 use yew::prelude::*;
 use yew_router::{prelude::*, route::Route, switch::Permissive, Switch};
 use yew_styles::{
+    layouts::{
+        container::{Container, Direction, Wrap},
+        item::{Item, ItemLayout},
+    },
     navbar::{
         navbar_component::{Fixed, Navbar},
         navbar_container::NavbarContainer,
@@ -55,10 +58,38 @@ impl Component for App {
                     render = Router::render(|switch: AppRouter | {
                         match switch {
                             AppRouter::RootPath => html!{
-                                <Home/>
+                                <Container direction=Direction::Row wrap=Wrap::Wrap class_name="content">
+                                    <Item layouts=vec!(ItemLayout::ItXs(12))>
+                                        <h2>{"Yew Parcel Template"}</h2>
+                                    </Item>
+                                    <Item layouts=vec!(ItemLayout::ItXs(12))>
+                                        <h3>{"Libraries used in this template"}</h3>
+                                    </Item>
+                                    <Item layouts=vec!(ItemLayout::ItXs(12))>
+                                        <ul>
+                                            <li><a href="https://yew.rs" target="_blank">{"yew.rs"}</a>{" : rustwasm frontent framwork"}</li>
+                                            <li><a href="https://github.com/spielrs/yew_styles" target="_blank">
+                                                {"yew_styles"}</a>{" : styles framework for yew"}</li>
+                                            <li><a href="https://parceljs.org/" target="_blank">
+                                                {"parceljs"}</a>{" : builder js library"}</li>
+                                            <li><a href="https://github.com/paulmillr/chokidar" target="_blank">
+                                            {"chokidar"}</a>{" : watcher js library"}</li>
+                                        </ul>
+                                    </Item>
+                                </Container>
                             },
                             AppRouter::AboutPath => html!{
-                                <About/>
+                                <Container direction=Direction::Row wrap=Wrap::Wrap class_name="content">
+                                    <Item layouts=vec!(ItemLayout::ItXs(12))>
+                                        <h2>{"Thanks for using or contributing!"}</h2>
+                                    </Item>
+                                    <Item layouts=vec!(ItemLayout::ItXs(12))>
+                                        <p>{"Yew Parcel Template is a "}
+                                            <a href="https://github.com/spielrs/yew-parcel-template/blob/master/LICENSE">{"MIT licensed "}</a>
+                                            {"project maintained by open source comunity"}
+                                        </p>
+                                    </Item>
+                                </Container>
                             },
                             AppRouter::PageNotFound(Permissive(None)) => html!{"Page not found"},
                             AppRouter::PageNotFound(Permissive(Some(missed_route))) => html!{format!("Page '{}' not found", missed_route)}
