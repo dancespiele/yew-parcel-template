@@ -12,7 +12,6 @@ extern crate yew_styles;
 use wasm_bindgen::prelude::*;
 
 mod app;
-mod pages;
 use app::App;
 
 cfg_if! {
