@@ -43,8 +43,7 @@ with the new name of your crate
   </script>
 ```
 
-You maybe want that parcel watch more than evething call by `index.html`, and the `src` and `Cargo.toml` of the crate, you need to add the path in the 
-watcher of `wasm-builder`:
+You maybe want that parcel watch more than everything call by `index.html`, and the `src` and `Cargo.toml` of the crate, you need to add the path in the watcher of `wasm-builder`:
 
 ```javascript
     chokidar.watch(['./crate/src', './crate/Cargo.toml', './crate/your_new_path_to_watch']).on('change', async (event, path) => {
