@@ -21,11 +21,14 @@
     "parcel-plugin-static-files-copy": "^2.3.1",
     "sass": "^1.26.5",
     "typescript": "^3.8.3",
-    "yew-styles": "0.2.0"
+    "yew-styles": "0.4.0"
   },
   "dependencies": {},
   "staticFiles": {
-    "staticPath": ["./crate/pkg", "./crate/assets"],
+    "staticPath": [
+      "./crate/pkg",
+      "./crate/assets"
+    ],
     "watcherGlob": false
   }
 }
