@@ -2,5 +2,6 @@ dist
 node_modules
 crate/pkg
 crate/target
+crate/Cargo.lock
 crate/wasm-pack.log
 .cache
