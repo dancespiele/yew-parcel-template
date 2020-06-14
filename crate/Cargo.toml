@@ -6,7 +6,7 @@ license = "MIT"
 name = "yew-parcel"
 readme = "./README.md"
 repository = "https://github.com/spielrs/yew-parcel-template.git"
-version = "0.14.2"
+version = "0.16.2"
 
 [lib]
 crate-type = ["cdylib"]
@@ -23,4 +23,4 @@ failure = "0.1"
 yew = { version="0.16", features = ["toml", "yaml", "msgpack", "cbor", "web_sys"]}
 yew-router = { version = "0.13", features = ["web_sys"]}
 web-sys = "0.3"
-yew_styles = "0.4.0"
+yew_styles = { version="0.5.1", features = ["layouts","navbar"]}
