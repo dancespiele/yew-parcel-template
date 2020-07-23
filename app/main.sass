@@ -2,9 +2,19 @@ body
     padding: 0
     margin: 0
 
-.navbar-item
-    text-decoration: none
-    color: inherit
+.navbar.outline.info
+    .navbar-item
+        padding: 0 10px
+        height: 100%
+        a
+            text-decoration: none
+            color: inherit
+            display: block
+            height: 100%
+            padding-top: 10px
+
+            &:focus
+                outline: none
 
 .content
     margin: 15% 40%

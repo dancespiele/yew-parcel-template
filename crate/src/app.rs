@@ -5,11 +5,15 @@ use yew_styles::{
     navbar::{
         navbar_component::{Fixed, Navbar},
         navbar_container::NavbarContainer,
+        navbar_item::NavbarItem,
     },
     styles::{Palette, Style},
 };
 
-pub struct App;
+pub struct App {
+    navbar_items: Vec<bool>,
+    link: ComponentLink<Self>,
+}
 
 #[derive(Switch, Debug, Clone)]
 pub enum AppRouter {
@@ -21,16 +25,32 @@ pub enum AppRouter {
     PageNotFound(Permissive<String>),
 }
 
+pub enum Msg {
+    ChangeNavbarItem(usize),
+}
+
 impl Component for App {
-    type Message = ();
+    type Message = Msg;
     type Properties = ();
 
-    fn create(_: Self::Properties, _: ComponentLink<Self>) -> Self {
-        App {}
+    fn create(_: Self::Properties, link: ComponentLink<Self>) -> Self {
+        App {
+            navbar_items: vec![true, false],
+            link,
+        }
     }
 
-    fn update(&mut self, _: Self::Message) -> ShouldRender {
-        false
+    fn update(&mut self, msg: Self::Message) -> ShouldRender {
+        match msg {
+            Msg::ChangeNavbarItem(index) => {
+                for (i, _) in self.navbar_items.clone().into_iter().enumerate() {
+                    self.navbar_items[i] = false;
+                }
+
+                self.navbar_items[index] = true;
+            }
+        }
+        true
     }
 
     fn change(&mut self, _: Self::Properties) -> ShouldRender {
@@ -41,14 +61,22 @@ impl Component for App {
         html! {
             <div>
                 <Navbar
-                    navbar_type=Palette::Info
+                    navbar_palette=Palette::Info
                     navbar_style=Style::Outline
                     fixed=Fixed::Top
-                    branch=html!{<img src="./yew.svg"/>}
+                    branch=html!{<img src="./spielrs_logo.png"/>}
                 >
                     <NavbarContainer>
-                            <RouterAnchor<AppRouter> classes="navbar-item" route=AppRouter::RootPath>{"Home"}</RouterAnchor<AppRouter>>
-                            <RouterAnchor<AppRouter> classes="navbar-item" route=AppRouter::AboutPath>{"About"}</RouterAnchor<AppRouter>>
+                            <NavbarItem
+                                active = self.navbar_items[0]
+                                onclick_signal = self.link.callback(|_| Msg::ChangeNavbarItem(0))
+                                >
+                                <RouterAnchor<AppRouter>route=AppRouter::RootPath>{"Home"}</RouterAnchor<AppRouter>></NavbarItem>
+                            <NavbarItem
+                                active = self.navbar_items[1]
+                                onclick_signal = self.link.callback(|_| Msg::ChangeNavbarItem(1))
+                                >
+                                <RouterAnchor<AppRouter>route=AppRouter::AboutPath>{"About"}</RouterAnchor<AppRouter>></NavbarItem>
                     </NavbarContainer>
                 </Navbar>
                 <Router<AppRouter, ()>
