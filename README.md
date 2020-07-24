@@ -1,4 +1,4 @@
-# `yew-parcel-template`
+# Yew Parcel Template
 
 **Kickstart your Yew, Yew-Router, WebAssembly, and Parcel project!**
 
@@ -87,14 +87,12 @@ For static files you need to include in the `package.json`:
 The static directory has to be included in some subfolder, not in the root path or it will be ignored. The bundle move the content of the directory
 into the `dist` not the directory itself
 
-## Why the template changes?
-The pluging `parcel-pluging-wasm.rs` breaks since the version `0.2.61` of `wasm-bindgen` and it looks that is not maintained anymore.
-Anyway although now small configurations is needed to add as I explained before, the new template build faster than the old one and also
-the new build file `wasm-builder` is a good stuff for customization and extending the implementation.
-
 ## Limitations
 If the server is closed while pages are still serving and after it is running again, the browser will not synchronize again with the server until
 you refresh the pages manually.
+
+## Do you like Yew Parcel Template?
+* If you like Yew Parcel Template, help us supporting the project with [Github Sponsors](https://github.com/sponsors/dancespiele)!
 
 ## Rustc Version Required
 
