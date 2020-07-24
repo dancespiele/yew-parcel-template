@@ -92,7 +92,7 @@ If the server is closed while pages are still serving and after it is running ag
 you refresh the pages manually.
 
 ## Do you like Yew Parcel Template?
-* If you like Yew Parcel Template, help us supporting the project with [Github Sponsors](https://github.com/sponsors/dancespiele)!
+If you like Yew Parcel Template, help us supporting the project with [Github Sponsors](https://github.com/sponsors/dancespiele)!
 
 ## Rustc Version Required
 
