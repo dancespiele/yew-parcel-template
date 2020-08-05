@@ -8,8 +8,7 @@ to WebAssembly and hooking into a Parcel build pipeline.
 * `npm start` -- Serve the project locally for
   development at `http://localhost:1234` by default.
 
-* `npm build` -- Serve the project in production mode
-
+* `npm build` -- Serve the project in production mode (gzip compression and high level wasm optimization)
 
 ## Using This Template
 
