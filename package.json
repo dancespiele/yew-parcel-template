@@ -4,7 +4,7 @@
     "url": "https://github.com/spielrs/yew-parcel-template"
   },
   "name": "yew-parcel",
-  "version": "0.17.1",
+  "version": "0.17.2",
   "license": "MIT",
   "scripts": {
     "start": "node wasm-builder.js",
@@ -12,7 +12,7 @@
     "debug": "NODE_ENV=dev node --nolazy --inspect-brk=9229 wasm-builder.js"
   },
   "bin": {
-    "create-yew-parcel": ".bin/create-yew-parcel.js"
+    "yew-parcel": ".bin/create-yew-parcel.js"
   },
   "devDependencies": {
     "brotli": "^1.3.2",
