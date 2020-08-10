@@ -25,7 +25,8 @@ clone.on("close", (code) => {
         handleError("install", code);
       } else {
         console.log(" Installed dependencies ✅ ");
-        console.log(" If you like Yew Parcel Templa, help us supporting the project with Github Sponsors: https://github.com/sponsors/dancespiele");
+        console.log(" If you like Yew Parcel Templa, help us supporting the project with Github Sponsors or grant it in gitcoins:"
+        + "\nhttps://github.com/sponsors/dancespiele\nhttps://gitcoin.co/grants/1050/yew-parcel-template");
       }
     });
   }
