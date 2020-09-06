@@ -21,6 +21,8 @@ pub enum AppRouter {
     RootPath,
     #[to = "/about!"]
     AboutPath,
+    #[to = "/user/{user}"]
+    UserPath(String),
     #[to = "/page-not-found"]
     PageNotFound(Permissive<String>),
 }
@@ -90,6 +92,11 @@ impl Component for App {
                             },
                             AppRouter::AboutPath => html!{
                                 <About/>
+                            },
+                            AppRouter::UserPath(user) => html!{
+                                <div class="user-test">
+                                    <h1>{user}</h1>
+                                </div>
                             },
                             AppRouter::PageNotFound(Permissive(None)) => html!{"Page not found"},
                             AppRouter::PageNotFound(Permissive(Some(missed_route))) => html!{format!("Page '{}' not found", missed_route)}

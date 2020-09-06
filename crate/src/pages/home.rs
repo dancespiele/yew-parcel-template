@@ -1,4 +1,6 @@
+use crate::app::AppRouter;
 use yew::prelude::*;
+use yew_router::prelude::*;
 use yew_styles::layouts::{
     container::{Container, Direction, Wrap},
     item::{Item, ItemLayout},
@@ -41,6 +43,7 @@ impl Component for Home {
                         <li><a href="https://github.com/paulmillr/chokidar" target="_blank">
                         {"chokidar"}</a>{" : watcher js library"}</li>
                     </ul>
+                    <RouterAnchor<AppRouter>route=AppRouter::UserPath("test".to_string())>{"User"}</RouterAnchor<AppRouter>>
                 </Item>
             </Container>
         }
