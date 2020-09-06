@@ -10,8 +10,8 @@
 
 **Kickstart your Yew, Yew-Router, WebAssembly, and Parcel project!**
 
-This template comes pre-configured with all the boilerplate for compiling Yew framework and Yew Router
-to WebAssembly and hooking into a Parcel build pipeline.
+This template comes pre-configured with all the boilerplate for compiling [Yew framework](https://yew.rs/docs/en/intro/) and [Yew Router](https://yew.rs/docs/en/concepts/router/)
+to WebAssembly and hooking into a [Parcel build pipeline](https://parceljs.org/).
 
 * `npm start` -- Serve the project locally for
   development at `http://localhost:1234` by default.
