@@ -1,5 +1,13 @@
 # Yew Parcel Template
 
+<div align="center">
+    <p>
+        <a href="https://discord.gg/ZHWmUaf" target="_blank"><img alt="Discord Chat" src="https://img.shields.io/badge/Discor-Spielrs%20-yellowgreen"/></a>
+        <a href="https://github.com/spielrs/yew-parcel-template/blob/master/LICENSE" target="_blank"><img alt="License" src="https://img.shields.io/badge/License-MIT%20-lightgrey"></a>
+        <a href="https://paypal.me/dancespiele?locale.x=en_US" target="_blank"><img alt="Donate by Paypal" src="https://img.shields.io/badge/Donate-PayPal-green.svg"/></a>
+    </p>
+</div>
+
 **Kickstart your Yew, Yew-Router, WebAssembly, and Parcel project!**
 
 This template comes pre-configured with all the boilerplate for compiling Yew framework and Yew Router
@@ -91,7 +99,9 @@ If the server is closed while pages are still serving and after it is running ag
 you refresh the pages manually.
 
 ## Do you like Yew Parcel Template?
-If you like Yew Parcel Template, help us supporting the project with [Github Sponsors](https://github.com/sponsors/dancespiele) or with grants in [Gitcoin](https://gitcoin.co/grants/1050/yew-parcel-template)
+If you like Yew Parcel Template, help us supporting the project:
+- [Github Sponsors](https://github.com/sponsors/dancespiele)
+- [Paypal](https://paypal.me/dancespiele?locale.x=en_US)
 
 
 ## Rustc Version Required
