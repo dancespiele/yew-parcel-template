@@ -27,3 +27,5 @@ yew = { version="0.17", features = ["toml", "yaml", "msgpack", "cbor", "web_sys"
 yew-router = { version = "0.14", features = ["web_sys"]}
 web-sys = "0.3"
 yew_styles = { version="0.7", features = ["navbar"]}
+yew-state= {git = "https://github.com/intendednull/yew-state.git"}
+yewtil= "0.3"
