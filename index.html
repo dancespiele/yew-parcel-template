@@ -6,10 +6,10 @@
     <title>My awesome Yew with Yew-Router and Parcel application</title>
     <script src="app/index.ts"></script>
     <script type="module">
-      import init, { run } from './yew_parcel.js';
+      import init, { run } from '/yew_parcel.js';
 
       const start = async() => {
-        await init('./yew_parcel_bg.wasm');
+        await init('/yew_parcel_bg.wasm');
         run();
       };
 
