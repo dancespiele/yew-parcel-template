@@ -27,7 +27,7 @@ clone.on("close", (code) => {
         console.log(" Installed dependencies ✅ ");
         console.log(" Mucha locura! Bzzzzzzzzzzzzz")
         console.log(" If you like Yew Parcel Templa, help us supporting the project:"
-        + "\nhttps://github.com/sponsors/dancespiele\nhttps://paypal.me/dancespiele?locale.x=en_US");
+        + "\nhttps://gitcoin.co/grants/1048/yew-styles\nhttps://github.com/sponsors/dancespiele\nhttps://paypal.me/dancespiele?locale.x=en_US");
       }
     });
   }
