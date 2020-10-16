@@ -100,6 +100,7 @@ you refresh the pages manually.
 
 ## Do you like Yew Parcel Template?
 If you like Yew Parcel Template, help us supporting the project:
+- [Gitcoin][https://gitcoin.co/grants/1048/yew-styles]
 - [Github Sponsors](https://github.com/sponsors/dancespiele)
 - [Paypal](https://paypal.me/dancespiele?locale.x=en_US)
 
