@@ -24,7 +24,7 @@
     "parcel-plugin-static-files-copy": "^2.5.0",
     "sass": "^1.26.10",
     "typescript": "^3.9.7",
-    "yew-styles": "0.7.2"
+    "yew-styles": "0.8.1"
   },
   "dependencies": {},
   "staticFiles": {
