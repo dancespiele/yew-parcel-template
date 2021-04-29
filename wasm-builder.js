@@ -33,7 +33,11 @@ chokidar.watch(['./crate/src', './crate/Cargo.toml']).on('change', async (event,
 });
 
 bundler.on('buildStart', () => {
-    const prevtBuildFile = Path.join(__dirname, './wasm_pack_cmd');
+    let prevtBuildFile = Path.join(__dirname, './wasm_pack_cmd');
+    if(process.platform == "win32") {
+        prevtBuildFile = Path.join(__dirname, './wasm_pack_cmd.bat');
+    }
+
     console.log(`running: ${prevtBuildFile}`);
     execSync(`${prevtBuildFile} ${buildType === 'production' ? '' : '--dev'}`, {stdio: 'inherit'});
 });
