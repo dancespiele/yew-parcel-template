@@ -1,0 +1,1 @@
+wasm-pack build crate --target web 
