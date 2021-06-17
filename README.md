@@ -100,11 +100,8 @@ you refresh the pages manually.
 
 ## Do you like Yew Parcel Template?
 If you like Yew Parcel Template, help us supporting the project:
-- Sending coins to the address **0x619d3FA3bD7CF497d9899Ccd4d7b5663Ff318e52**
 - BAT rewards in case that you use [Brave Browser](https://brave.com/)
-- [Github Sponsors](https://github.com/sponsors/dancespiele)
-- Burst coins to the address BURST-DPN6-2AT3-FCRL-9BBKG
-
+- Using this link to create an account in [Binance](https://www.binance.com/en/register?ref=DB8EPXF0) (get 10% fee back for every trading)
 
 ## Rustc Version Required
 
