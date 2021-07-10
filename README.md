@@ -2,7 +2,7 @@
 
 <div align="center">
     <p>
-        <a href="https://discord.gg/ZHWmUaf" target="_blank"><img alt="Discord Chat" src="https://img.shields.io/badge/Discor-Spielrs%20-yellowgreen"/></a>
+        <a href="https://discord.gg/ZHWmUaf" target="_blank"><img alt="Discord Chat" src="https://img.shields.io/badge/Discord-Spielrs%20-yellowgreen"/></a>
         <a href="https://github.com/spielrs/yew-parcel-template/blob/master/LICENSE" target="_blank"><img alt="License" src="https://img.shields.io/badge/License-MIT%20-lightgrey"></a>
         <a href="https://paypal.me/dancespiele?locale.x=en_US" target="_blank"><img alt="Donate by Paypal" src="https://img.shields.io/badge/Donate-PayPal-green.svg"/></a>
     </p>
