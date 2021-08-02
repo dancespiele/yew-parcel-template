@@ -27,7 +27,7 @@ clone.on("close", (code) => {
         console.log(" Installed dependencies ✅ ");
         console.log(" Mucha locura! Bzzzzzzzzzzzzz")
         console.log(" If you like Yew Parcel Template, help us supporting the project:"
-        + "\nBAT rewards in case that you use Brave Browser in https://github.com/dancespiele 
+        + "\nBAT rewards in case that you use Brave Browser in https://github.com/dancespiele" 
         + "\nUsing this link https://www.binance.com/en/register?ref=DB8EPXF0 to create an account in Binance (get 10% fee back for every trading)");
       }
     });
